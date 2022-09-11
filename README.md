@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://github.com/ProboKrishnacahya/Recipe_Page_devChallenges">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://recipe-page-devchallenges-pk.vercel.app/">
       Solution
     </a>
     <span> | </span>
@@ -26,18 +26,9 @@
 
 ## Table of Contents
 
-- [Overview](#overview)
 - [Built With](#built-with)
 - [Features](#features)
 - [Contact](#contact)
-
-<!-- OVERVIEW -->
-
-## Overview
-
-![Desktop Mode View](./assets/img/Desktop.png)
-![Mobile Mode View](./assets/img/Mobile.png)
-
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->

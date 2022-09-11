@@ -17,6 +17,10 @@ span {
     font-family: var(--font-primary);
 }
 
+input[type="checkbox"] {
+    accent-color: var(--color-primary);
+}
+
 footer {
     font-family: var(--font-tertiary);
     font-size: 14px;
@@ -36,11 +40,21 @@ img {
     border-radius: 0.8rem;
 }
 
-p, small {
+p,
+small,
+form,
+.instructions {
     font-family: var(--font-secondary);
 }
 
 /** Selector (Class) */
+.card {
+    padding: 1rem 0 0 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5px 2.5px 0 var(--color-tertiary);
+    background-color: var(--color-secondary);
+}
+
 .container {
     margin: 2rem 3rem;
 }
@@ -52,9 +66,15 @@ p, small {
 .d-grid {
     display: grid;
 }
-.g-3{
+
+.g-3 {
     gap: 1rem;
 }
+
+.g-5 {
+    gap: 3rem;
+}
+
 .italic {
     font-style: italic;
 }
@@ -67,12 +87,28 @@ p, small {
     margin-top: 3rem;
 }
 
+.number {
+    height: fit-content;
+    padding: 0.25rem 0.75rem;
+    margin-right: 0.5rem;
+    border-radius: 0.375rem;
+    font-family: var(--font-primary);
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
 .place-items-center {
     place-items: center;
 }
-.text-muted{
+
+.text-muted {
     color: var(--color-tertiary);
 }
+
+.text-primary {
+    color: var(--color-primary);
+}
+
 .text-uppercase {
     text-transform: uppercase;
 }
@@ -80,6 +116,14 @@ p, small {
 .username {
     font-weight: 700;
     text-decoration: underline;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.w-75 {
+    width: 75%;
 }
 
 /** Pseudo-classes */
@@ -93,7 +137,7 @@ p, small {
 }
 
 a:hover {
-    color: initial;
+    color: var(--color-primary);
 }
 
 /** Pseudo-elements */
@@ -118,9 +162,21 @@ a:hover {
 
 /*! Mobile Mode View */
 @media screen and (max-width: 768px) {
-
     /** Selector (Class) */
     .container {
         margin: 1rem;
+    }
+
+    .card {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .d-flex {
+        flex-direction: column-reverse;
+    }
+
+    .w-25,
+    .w-75 {
+        width: unset;
     }
 }
